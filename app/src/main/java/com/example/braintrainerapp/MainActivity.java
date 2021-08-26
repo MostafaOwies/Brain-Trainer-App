@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         questions=0;
         newQuestion();
         score.setText(Integer.toString(scores)+"/"+Integer.toString(questions));
-        new CountDownTimer(10000+100,1000){
+        new CountDownTimer(35000+100,1000){
             public void onTick(long l){
                 timerFunction((int)l/1000);
             }
