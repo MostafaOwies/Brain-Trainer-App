@@ -102,12 +102,12 @@ public class MainActivity extends AppCompatActivity {
         questions=0;
         newQuestion();
         score.setText(Integer.toString(scores)+"/"+Integer.toString(questions));
-        new CountDownTimer(30000+100,1000){
+        new CountDownTimer(10000+100,1000){
             public void onTick(long l){
                 timerFunction((int)l/1000);
             }
             public void onFinish(){
-                correctOrWrong.setText("Done!");
+                correctOrWrong.setText("Done!\nYour score is "+Integer.toString(scores)+"/"+Integer.toString(questions));
                 playAgainButton.setVisibility(View.VISIBLE);
                 correctOrWrong.setVisibility(View.VISIBLE);
                 choice1.setEnabled(false);
